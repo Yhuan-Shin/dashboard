@@ -1,0 +1,110 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Top bar styles */
+  .top-bar {
+    background-color: blue;
+    color: white;
+    padding: 20px 30px;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .content{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* Default layout for desktop */
+    flex-wrap: wrap; /* Ensure elements wrap if content exceeds container width */
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px; /* Add margin between image and form */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto;
+  }
+  
+  .form-section {
+    flex: 1; /* Take remaining space */
+    margin-top: 20px; /* Add space between image and form */
+    padding: 20px;
+  }
+  
+  .form-section h2 {
+    
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .form-actions button,
+  .form-actions a {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .form-actions button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .form-actions a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Media query for mobile screens */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack elements on top of each other */
+    }
+  
+    .image-container {
+      margin-right: 0; /* Remove margin between image and form */
+    }
+  }
+  

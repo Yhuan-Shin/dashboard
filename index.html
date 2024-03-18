@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="container-logo">
+                <img src="/images/icon-user.png" alt="user" class="user-icon" width="35px" height="35px">
+                <a href="#" class="username">Gleibeile Dela Cruz</a>
+            </div>
+           
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#"><img src="/images/icon-notif.png" alt="" width="20px" height="20px"></a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+        
+    </nav>
+    <!-- STATUS -->
+    <div class="center-container">
+        <div class="grid-container">
+
+            <div class="grid-child left">
+                <h4>Status</h4>
+                <h4 style="color: gray; padding: 15px;">Gas level(%):</h4>
+                <div class="gas-container">
+                    <div class="gas-level">
+                        <div class="level"><h3 id="text-level">50%</h3></div>
+                    </div>
+                </div>
+                
+            </div>
+        <!-- Refill -->
+            <div class="grid-child right">
+                <div class="brand-container">
+                    <h4>Refill Cylinder</h4>
+                    <h4 style="color: gray; padding: 10px;">Select Brand:</h4>
+                    <div class="brand">
+                        <form action="" class="brand_form">
+                            <div class="tank_container left">
+                                <input type="radio" name="tank" id="">
+                                <label for="">LPG</label><br>
+                                <input type="radio" name="tank" id="">
+                                <label for="">Solane</label>
+                            </div>
+                            
+                            <div class="tank_container right">
+                                <input type="radio" name="tank" id="">
+                                <label for="">Super Kalan</label><br>
+                                <input type="radio" name="tank" id="">
+                                <label for="">Brent</label>
+                            </div>
+                            
+    
+                        </form>
+                    </div>
+                </div>
+              
+
+                <div class="weight-container">
+                    <h4 style="color: gray; padding: 10px;">Select Weight:</h4>
+                    <div class="weight">
+                        <form action="" class="weight_form">
+                            <div class="tank_container left">
+                                <input type="radio" name="weight" id="">
+                                <label for="">50kg</label><br>
+                                <input type="radio" name="weight" id="">
+                                <label for="">22kg</label>
+                            </div>
+                            
+                            <div class="tank_container right">
+                                <input type="radio" name="weight" id="">
+                                <label for="">11kg</label><br>
+                                <input type="radio" name="weight" id="">
+                                <label for="">7kg</label><br>
+                                <input type="radio" name="weight" id="">
+                                <label for="">2.7kg</label>
+                            </div>
+                            </form>
+                    </div>
+                   
+                </div>
+                <div class="btn_container">
+                    <button class="btn_submit">Submit</button>
+                </div>
+
+            </div>
+          
+        </div>
+    </div>
+    
+</body>
+</html>

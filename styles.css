@@ -1,0 +1,223 @@
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar left */
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+.username{
+    padding: 10px;
+}
+/* navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(52,77,210);
+    padding: 30px 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .nav-links li a {
+        padding: 15px;
+    }
+}
+/* container details */
+.center-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.grid-container {
+    padding: 50px;
+    grid-gap: 50px;
+    display: grid;
+    text-align: left;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-child{
+    border: solid 1px black;
+    padding: 20px;
+}
+/* left container */
+.gas-container{
+    display: flex;
+    justify-content: center;
+}
+.gas-level {
+    width: 50%;
+    height:300px;
+    background-color: #DADADA;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: baseline;
+}
+.level{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    height: 150px;
+    font-size: 25px;
+    background-color: white;
+    width: 100%;
+}
+#text-level{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+/* right container */
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+    color: gray;
+}
+/* brand */
+.brand-container{
+    padding: 10px;
+}
+.brand{
+    border: 1px solid black;
+    padding: 20px;
+    
+    height: auto;
+}
+.tank_container-left{
+    width: 50%;
+    height: 100px;
+    padding: 20px;   
+}
+.tank_container-right{
+    padding: 20px;   
+    height: 100px;
+    width: 50%;
+}
+.brand_form{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* weight*/
+.weight-container{
+    padding: 10px;
+}
+.weight{
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    height: auto;
+}
+.tank_container-left{
+    width: 50%;
+    height: 100px;
+    padding: 20px;   
+}
+.tank_container-right{
+    padding: 20px;   
+    height: 100px;
+    width: 50%;
+}
+.weight_form{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    font-size: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* btn submit */
+.btn_container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.btn_submit{
+    background-color: rgb(52,77,210);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .grid-container {
+      display: block;
+      justify-content: center;
+      padding: 20px; /* Adjust padding as needed */
+  }
+
+  .grid-child {
+      width: 100%;
+      margin-bottom: 20px; /* Add some space between grid children */
+  }
+
+  .brand-container,
+  .weight-container {
+      padding: 10px;
+  }
+
+  .tank_container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .btn_container {
+      text-align: center; /* Center the button */
+  }
+
+  .btn_submit {
+      width: 100%; /* Make the button full-width */
+  }
+}
