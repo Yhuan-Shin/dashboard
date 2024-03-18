@@ -11,35 +11,39 @@
   <div class="top-bar">
     INPUT TANK DETAILS
   </div>
-  
-  <!-- Rest of the content -->
-  <div class="container">
-    <div class="content">
-      <div class="image-container">
-        <img src="images/tank.png" alt="Tank Image" width="70%" height="70%">
-      </div>
-      <div class="form-section">
-        <h2>Input Tank Details</h2>
-        <form action="#">
-          <div class="form-group">
-            <label for="brand">Select Brand</label>
-            <select name="brand" id="brand">
-              <option value="">Select Brand</option>
-            </select>
+  <div class="content">
+    <div class="img-container">
+      <img src="images/tank.png" alt="" class="tank-img" width="350px" height="390px">
+    </div>
+    <div class="form-container">
+      <h1>ADD TANK</h1>
+      <form action="">
+        <select id="brand" name="brand">
+          <option value="" disabled selected>Select Brand</option>
+          <option value="lpg">LPG</option>
+          <option value="solane">Solane</option>
+          <option value="superkalan">Super Kalan</option>
+          <option value="brent">Brent</option>
+        </select><br>
+        <select id="weight" name="weight">
+          <option value="" disabled selected>Select Weight</option>
+          <option value="50kg">50kg</option>
+          <option value="22kg">22kg</option>
+          <option value="11kg">11kg</option>
+          <option value="7kg">7kg</option>
+          <option value="2.7kg">2.7kg</option>
+        </select><br>
+        <button type="submit" class="submit">Submit</button>
+        <div class="button-container">
+          <div class="container-back">
+            <button class="back">Back</button>
+
           </div>
-          <div class="form-group">
-            <label for="weight">Select Weight</label>
-            <select name="weight" id="weight">
-              <option value="">Select Weight</option>
-            </select>
+          <div class="container-next">
+            <button class="skip">Skip</button>
           </div>
-        </form>
-        <div class="form-actions">
-          <a href="#">Back</a>
-          <a href="#">Skip</a>
-          <button type="submit">Submit</button>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </body>
